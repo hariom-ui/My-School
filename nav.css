@@ -1,0 +1,111 @@
+
+.nav-bar{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: rgb(142, 0, 0);
+    height: auto;
+    width:100%;
+    
+}
+
+div > li{
+    float:right;
+    list-style-type: none;
+    margin-inline: 5px;
+}
+
+div >li > a{
+    text-decoration: none;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div > li > a:hover{
+    color: rgba(220, 178, 7, 0.886);
+    text-decoration: underline;
+}
+
+
+* {box-sizing: border-box;}
+html, body{
+ margin:0;
+ padding: 0;
+ }
+
+ body{
+     display: flex;
+     min-height: 100vh;
+     flex-direction: column;
+     background-color:rgba(220, 178, 7, 0.886);
+     
+ }
+
+ main {
+ flex: 1 0 auto;
+}
+footer {
+ color: #fff;
+ background: #333;
+ position: relative; /* required to position the copyright at the bottom */
+ font-size: 80%;
+}
+.footer-copyright {
+ width:100%;
+ height: 40px;
+ background: #111;
+ /* positions the copyright at the bottom of the footer */
+ padding: 10px;
+ position: absolute;
+ bottom: 0px;
+ left: 0px;
+}
+.footer-body {
+ margin-bottom: 40px;
+}
+ /* the clearfix hack */
+.footer-body::after {
+ content: "";
+ display: block;
+ clear: both;
+}
+/* float the divs */
+.footer-body > div {
+ float: left;
+ padding: 20px;
+}
+/* sets the width of the first column */
+.footer-body > div:first-child {
+ font-size: 150%;
+ width: 35%;
+ text-align: center;
+}
+/* sets the width of the second column */
+.footer-body > div:last-child {
+ width: 65%;
+}
+.footer-body ul {
+ float: right;
+ list-style-type: none;
+ margin: 0px;
+ padding: 0px;
+ text-align: center;
+}
+.footer-body li > a {
+ color: white;
+ text-decoration: none;
+ margin-bottom: 7px;
+}
+
+
+ ::-webkit-scrollbar{
+     width:10px;
+ }
+ ::-webkit-scrollbar-track{
+     background-color:rgba(255, 255, 255, 0.6);
+     border-radius: 10px;
+ }
+ ::-webkit-scrollbar-thumb{
+     background-color: rgba(142, 0, 0, 0.719);
+     border-radius: 10px;
+ }
